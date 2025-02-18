@@ -10,11 +10,13 @@ import PreviewPage2 from './Pages/PreviewPage2'
 import PreviewPage3 from './Pages/PreviewPage3'
 import AboutUs from './Pages/AboutUs'
 import Contact from './Pages/Contact'
+import ScrollToTop from './utils/ScrollToTop'
 
 const App = () => {
   return (
     <>
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
