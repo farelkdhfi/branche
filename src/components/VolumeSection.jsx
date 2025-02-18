@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import volume1 from '../assets/volume1.png';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const VolumeSection = () => {
     const garisRef = useRef(null);
@@ -26,7 +27,7 @@ const VolumeSection = () => {
             <div className='lg:w-1/2 z-50 flex flex-col justify-center items-center lg:justify-start lg:items-start'>
                 <h2 className='font-bold text-xl'>Classy Lips</h2>
                 <p className='max-w-md text-center lg:text-start'>Classy Lips is a blend of elegance and confidence, featuring a refined silhouette with a modern touch. Designed for timeless style, it balances sophistication and boldness with effortless charm.</p>
-                <a href="/preview" className='mt-2 bg-black p-2 px-4 rounded-lg flex text-white w-fit justify-center items-center gap-x-2'>Check <FaArrowRight /></a>
+                <Link to="/preview" className='mt-2 bg-black p-2 px-4 rounded-lg flex text-white w-fit justify-center items-center gap-x-2'>Check <FaArrowRight /></Link>
             </div>
             <div className='lg:w-1/2 z-50'>
                 <div className='lg:w-[70vh] w-full h-full lg:h-[70vh] bg-gray-200 lg:absolute lg:bottom-0 rounded-full'>
