@@ -17,8 +17,7 @@ const Hero = () => {
             <div className='w-full flex justify-center items-center'>
                 <img src={model1} className='absolute bottom-0 lg:w-[40vh] w-[45vh]' alt="" />
             </div>
-            <p className='hidden lg:flex absolute bottom-5 max-w-72 left-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulume.</p>
-
+            <p className='hidden lg:flex absolute bottom-5 max-w-72 left-20'>True elegance demands no attention—it is felt. Luxqo.drei, a reflection of poise, strength, and timelessness.</p>
             <div className='hidden lg:flex flex-col absolute bottom-5 right-20 gap-y-2'>
                 <p>Choose your size:</p>
                 <div className='flex gap-x-2'>
