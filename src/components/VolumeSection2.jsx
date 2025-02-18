@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import volume1 from '../assets/volume2.png';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const VolumeSection2 = () => {
     const garisRef = useRef(null);
@@ -33,7 +34,7 @@ const VolumeSection2 = () => {
             <div className='lg:w-1/2 z-50 flex flex-col justify-center items-center lg:justify-start lg:items-start'>
                 <h2 className='font-bold text-xl'>Blue Juliet's</h2>
                 <p className='max-w-md text-center lg:text-start'>Blue Juliets embodies grace and strength, with elegant blue tones that reflect both serenity and character in a timeless design.</p>
-                <a href="preview2" className='mt-2 bg-black p-2 px-4 rounded-lg flex text-white w-fit justify-center items-center gap-x-2'>Check <FaArrowRight /></a>
+                <Link to="/preview2" className='mt-2 bg-black p-2 px-4 rounded-lg flex text-white w-fit justify-center items-center gap-x-2'>Check <FaArrowRight /></Link>
             </div>
         </section>
     );
