@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { TbShoppingBag } from 'react-icons/tb'
-import { FiMenu, FiX } from 'react-icons/fi' // Ikon menu
 import { Link } from 'react-router-dom'
 import Logo from '../assets/catharsis.png'
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
 
     return (
         <header className='w-full px-5 md:px-10 lg:px-20 absolute py-5 border border-black/5 bg-black/35 backdrop-blur-2xl z-[9999]'>
