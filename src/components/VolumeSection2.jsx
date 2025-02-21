@@ -7,14 +7,16 @@ const VolumeSection2 = () => {
     const { ref, inView } = useInView({ triggerOnce: true });
 
     return (
-        <section className='h-screen bg-[#0c0c0c] flex justify-center items-center relative px-20'>
+        <section className='lg:h-screen py-20 lg:py-0 bg-[#0c0c0c] flex flex-col lg:flex-row justify-center items-center relative lg:px-20 px-5'>
             <div>
-                <img src={Img} alt="" className='w-[35vw]' />
+                <img src={Img} alt="" className='lg:w-[35vw] w-[70vw]' />
             </div>
 
+            <p className='text-sm text-white/70 lg:hidden mt-3 lg:mt-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus aspernatur quidem. Recusandae, dolore! Consequuntur temporibus, deserunt ullam minus deleniti voluptatibus in vero porro sed! Nostrum debitis maiores deserunt exercitationem?</p>
 
 
-            <div ref={ref} className=" flex items-center justify-center right-[20rem] top-72">
+
+            <div ref={ref} className="hidden lg:flex items-center justify-center right-[20rem] top-72">
                 {/* Titik Bulat */}
                 <div className="w-5 h-5 bg-white rounded-full flex justify-center items-center"></div>
 

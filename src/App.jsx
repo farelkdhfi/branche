@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './Pages/HomePage'
 import ScrollToTop from './utils/ScrollToTop'
+import Gallery from './components/Gallery'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>
