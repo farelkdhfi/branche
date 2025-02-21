@@ -7,7 +7,7 @@ import img4 from '../assets/gal4.png'
 const Gallery = () => {
   return (
     <section className='min-h-screen bg-[#141414] flex justify-center items-center w-full'>
-        <div className='flex flex-wrap justify-center items-center mt-[20vh]'>
+        <div className='flex flex-wrap justify-center items-center lg:mt-[20vh] mt-[15vh]'>
             <img src={img1} alt="" className='aspect-square'/>
             <img src={img2} alt="" className='aspect-square'/>
             <img src={img3} alt="" className='aspect-square'/>
