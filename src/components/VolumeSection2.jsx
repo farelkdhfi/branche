@@ -8,10 +8,11 @@ const VolumeSection2 = () => {
 
     return (
         <section className='lg:h-screen py-20 lg:py-0 bg-[#0c0c0c] flex flex-col lg:flex-row justify-center items-center relative lg:px-20 px-5'>
-            <motion.img src={Img} alt="" className='lg:w-[35vw] w-[70vw]'
+            <motion.img src={Img} alt="" className='lg:w-[35vw] w-[70vw] hidden lg:flex'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: inView ? 100 : 0 }} // Animasi saat masuk viewport
                 transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }} />
+            <img src={Img} alt="" className='lg:w-[35vw] w-[70vw] lg:hidden flex' />
 
             <p className='text-sm text-white/70 lg:hidden mt-3 lg:mt-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus aspernatur quidem. Recusandae, dolore! Consequuntur temporibus, deserunt ullam minus deleniti voluptatibus in vero porro sed! Nostrum debitis maiores deserunt exercitationem?</p>
 
