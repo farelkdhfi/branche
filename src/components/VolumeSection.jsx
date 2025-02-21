@@ -1,41 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import volume1 from '../assets/volume1.png';
-import { FaArrowRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import Img from '../assets/imageSection1.png'
+import BackgroundImg from '../assets/imgSection2.png'
 
 const VolumeSection = () => {
-    const garisRef = useRef(null);
-
-    useEffect(() => {
-        gsap.to(garisRef.current, {
-            y: '200vh',
-            duration: 2,
-            repeat: -1,
-            ease: 'linear',
-            onRepeat: () => gsap.set(garisRef.current, { y: '-10vh' })
-        });
-    }, []);
-
-    return (
-        <section className='lg:h-screen lg:relative px-5 pt-16 lg:pt-0 lg:px-20 flex flex-col lg:flex-row justify-center items-center lg:overflow-hidden gap-y-3 lg:gap-y-0 bg-gray-100 lg:bg-white'>
-            <div className='hidden lg:flex absolute lg:right-[70vh]'>
-                <div className='w-50 h-[160vh] bg-gradient-to-b from-white via-gray-200 to-white overflow-hidden relative rotate-45'>
-                    <div ref={garisRef} className='bg-white h-20 w-full absolute top-0 shadow-lg'></div>
-                </div>
+  return (
+    <section className='bg-[#141414] h-[80vh] relative flex justify-center items-center px-20 overflow-hidden py-20'>
+        <div className='flex flex-row justify-start items-center px-20 w-full'>
+            <img src={BackgroundImg} alt="" className='absolute h-screen opacity-5 right-0' />
+            <div className='w-1/2 text-white/50 z-30'>
+                <h2 className='font-bold text-xl text-white'>Catharsis Empire</h2>
+                <p className='text-sm max-w-xl text-pretty tracking-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae dolor et deleniti quibusdam saepe harum cumque, quis aperiam commodi delectus magnam necessitatibus, quasi earum, excepturi quod expedita magni voluptatibus.</p>
             </div>
-            <div className='lg:w-1/2 z-50 flex flex-col justify-center items-center lg:justify-start lg:items-start'>
-                <h2 className='font-bold text-xl'>Classy Lips</h2>
-                <p className='max-w-md text-center lg:text-start'>Classy Lips is a blend of elegance and confidence, featuring a refined silhouette with a modern touch. Designed for timeless style, it balances sophistication and boldness with effortless charm.</p>
-                <Link to="/preview" className='mt-2 bg-black p-2 px-4 rounded-lg flex text-white w-fit justify-center items-center gap-x-2'>Check <FaArrowRight /></Link>
-            </div>
-            <div className='lg:w-1/2 z-50'>
-                <div className='lg:w-[70vh] w-full h-full lg:h-[70vh] bg-gray-200 lg:absolute lg:bottom-0 rounded-full'>
-                    <img src={volume1} alt="" className='lg:absolute lg:bottom-0 lg:w-[65vh] w-full' />
-                </div>
-            </div>
-        </section>
-    );
-};
+                <img src={Img} alt="" className='w-[70vw] absolute rotate-45 right-20 opacity-80'/>
+        </div>
+    </section>
+  )
+}
 
-export default VolumeSection;
+export default VolumeSection
