@@ -6,7 +6,7 @@ import Logo from '../assets/catharsis.png'
 const Navbar = () => {
 
     return (
-        <header className='w-full px-5 md:px-10 lg:px-20 absolute py-5 border border-black/5 bg-black/35 backdrop-blur-2xl z-[9999]'>
+        <header className='w-full px-5 md:px-10 lg:px-20 fixed py-5 border border-black/5 bg-black/35 backdrop-blur-2xl z-[9999]'>
             <nav className='flex justify-between items-center'>
                 {/* Logo */}
                 <Link to="/" >
